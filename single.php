@@ -50,7 +50,7 @@ if(empty($results)) {
 
 <body>
 
-	<h1><?php echo $results['name']; ?></h1>
+	<h1>Community Garden: <?php echo $results['name']; ?></h1>
     <p>Street Address: <?php echo $results['street_address']; ?></p>
 	<p>Longitude: <?php echo $results['longitude']; ?></p>
 	<p>Latitude: <?php echo $results['latitude']; ?></p>
