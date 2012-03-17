@@ -94,6 +94,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
         </div>
         <button type="submit">Update</button>
     </form>
+	
+	<a href="index.php">Go Back</a>
 
 </body>
 </html>
