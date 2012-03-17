@@ -23,7 +23,7 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
 
 <body>
 
-	<a href="add.php">Add a Community Garden!</a>
+	<a href="admin/index.php">Admin Login</a>
     
 	<ul>
 		<?php /*foreach ($results as $movie) {
@@ -34,8 +34,6 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
         <?php foreach ($results as $garden) : ?>
         	<li>
             	<a href="single.php?id=<?php echo $garden['id']; ?>"><?php echo $garden['name']; ?></a>
-                <a href="edit.php?id=<?php echo $garden['id']; ?>">Edit</a>
-                <a href="delete.php?id=<?php echo $garden['id']; ?>">Delete</a>
             </li>
         <?php endforeach; ?>
 	</ul>
