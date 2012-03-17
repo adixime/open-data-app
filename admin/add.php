@@ -40,17 +40,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	}
 }
 
-?><!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Add a Community Garden</title>
-	<link href="../css/admin.css" rel="stylesheet">
-	<script src="../js/modernizr-2.0.6.js"></script>
-</head>
+include '../includes/admin-top.php';
 
-<body>
-
+?>
 	<form method="post" action="add.php">
     	<div>
         	<label for="name">Community Garden Name:<?php if (isset($errors['name'])) : ?> <strong>is required</strong><?php endif; ?></label>
@@ -71,5 +63,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
         <button type="submit">Add</button>
     </form>
 
-</body>
-</html>
+<?php
+include '../includes/admin-bottom.php';
+?>

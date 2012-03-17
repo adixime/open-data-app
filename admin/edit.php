@@ -64,16 +64,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	$latitude = $results['latitude'];
 }
 
-?><!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Edit a Community Garden</title>
-	<link href="../css/admin.css" rel="stylesheet">
-	<script src="../js/modernizr.min.js"></script>
-</head>
+include '../includes/admin-top.php';
 
-<body>
+?>
 
 	<form method="post" action="edit.php?id=<?php echo $id; ?>">
     	<div>
@@ -97,5 +90,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	
 	<a href="index.php">Go Back</a>
 
-</body>
-</html>
+<?php
+include '../includes/admin-bottom.php';
+?>

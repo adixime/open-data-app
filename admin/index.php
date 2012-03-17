@@ -12,17 +12,9 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
 //var_dump($db->errorInfo());
 //var_dump($results);
 
-?><!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Admin Section</title>
-	<link href="../css/admin.css" rel="stylesheet">
-	<script src="../js/modernizr-2.0.6.js"></script>
-</head>
+include '../includes/admin-top.php';
 
-<body>
-
+?>
 	<a href="add.php">Add a Community Garden!</a>
     
 	<ul>
@@ -40,5 +32,6 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
         <?php endforeach; ?>
 	</ul>
 
-</body>
-</html>
+<?php
+include '../includes/admin-bottom.php';
+?>

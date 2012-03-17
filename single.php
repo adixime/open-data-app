@@ -38,23 +38,15 @@ if(empty($results)) {
 	exit; //Stop the PHP compiler right here and immediately redirect the user	
 }
 
+include 'includes/user-top.php';
 
-?><!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Open Data App Prototype</title>
-	<link href="css/public.css" rel="stylesheet">
-	<script src="js/modernizr-2.0.6.js"></script>
-</head>
-
-<body>
-
+?>
 	<h1>Community Garden: <?php echo $results['name']; ?></h1>
     <p>Street Address: <?php echo $results['street_address']; ?></p>
 	<p>Longitude: <?php echo $results['longitude']; ?></p>
 	<p>Latitude: <?php echo $results['latitude']; ?></p>
 	<a href="index.php">Home</a>
-    
-</body>
-</html>
+
+<?php
+include 'includes/user-bottom.php';
+?>
