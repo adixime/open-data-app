@@ -6,8 +6,8 @@ $errors = array();
 
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $street_address = filter_input(INPUT_POST, 'street_address', FILTER_SANITIZE_STRING);
-$longitude = filter_input(INPUT_POST, 'longitude', FILTER_SANITIZE_STRING);
-$latitude = filter_input(INPUT_POST, 'latitude', FILTER_SANITIZE_STRING);
+$longitude = filter_input(INPUT_POST, 'longitude', FILTER_SANITIZE_NUMBER_FLOAT);
+$latitude = filter_input(INPUT_POST, 'latitude', FILTER_SANITIZE_NUMBER_FLOAT);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	if(empty($name)) {
