@@ -5,8 +5,8 @@ require_once '../includes/db.php';
 $places_xml = simplexml_load_file('communityGardens.kml');
 
 $sql = $db->prepare('
-	INSERT into open_data_app (name, street_address, longitude, latitude)
-	VALUES (:name, :street_address, :longitude, :latitude)
+	INSERT into open_data_app (Name, Address, Longitude, Latitude)
+	VALUES (:Name, :Address, :Longitude, :Latitude)
 ');
 
 foreach ($places_xml->Document->Folder[0]->Placemark as $place) {
@@ -24,10 +24,10 @@ foreach ($places_xml->Document->Folder[0]->Placemark as $place) {
 	
 	//echo $adr;
 	
-	$sql->bindValue(':name', $place->name, PDO::PARAM_STR);
-	$sql->bindValue(':street_address', $adr, PDO::PARAM_STR);
-	$sql->bindValue(':longitude', $coords[0], PDO::PARAM_STR);
-	$sql->bindValue(':latitude', $coords[1], PDO::PARAM_STR);
+	$sql->bindValue(':Name', $place->name, PDO::PARAM_STR);
+	$sql->bindValue(':Address', $adr, PDO::PARAM_STR);
+	$sql->bindValue(':Longitude', $coords[0], PDO::PARAM_STR);
+	$sql->bindValue(':Latitude', $coords[1], PDO::PARAM_STR);
 	$sql->execute();
 }
 
