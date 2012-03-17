@@ -13,7 +13,7 @@ include 'includes/user-top.php';
 ?>
 	<a href="admin/index.php">Admin Login</a>
     
-	<ol>
+	<ol class="gardens">
 		<?php foreach ($results as $garden) : ?>
         	<li itemscope itemtype="http://schema.org/Park">
             	<a href="single.php?id=<?php echo $garden['id']; ?>" itemprop="name"><?php echo $garden['name']; ?></a>

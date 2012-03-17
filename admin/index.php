@@ -13,7 +13,7 @@ include '../includes/admin-top.php';
 ?>
 	<a href="add.php">Add a Community Garden!</a>
     
-	<ol>
+	<ol class="gardens">
 		
         <?php foreach ($results as $garden) : ?>
         	<li itemscope itemtype="http://schema.org/Park">
