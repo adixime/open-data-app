@@ -1,8 +1,8 @@
 <?php 
 
-require_once 'includes/filter-wrapper.php';
+require_once '../includes/filter-wrapper.php';
 
-require_once 'includes/db.php';
+require_once '../includes/db.php';
 //var_dump($db);
 //->exec() allows us to perform SQ: and NOT expect results
 //->query() allows us to perform SQL and expect results
@@ -17,7 +17,6 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
 <head>
 	<meta charset="utf-8">
 	<title>Admin Section</title>
-	<link href="css/public.css" rel="stylesheet">
 	<link href="css/admin.css" rel="stylesheet">
 </head>
 

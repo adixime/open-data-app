@@ -18,7 +18,6 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
 	<meta charset="utf-8">
 	<title>Open Data App Prototype</title>
 	<link href="css/public.css" rel="stylesheet">
-	<link href="css/admin.css" rel="stylesheet">
 </head>
 
 <body>

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'includes/filter-wrapper.php';
+require_once '../includes/filter-wrapper.php';
 
 $errors = array();
 
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$errors['latitude'] = true;
 	}
 	if (empty($errors)) {
-		require_once 'includes/db.php';
+		require_once '../includes/db.php';
 
 		$sql = $db->prepare('
 			INSERT INTO open_data_app (name, street_address, longitude, latitude)
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 <head>
 	<meta charset="utf-8">
 	<title>Add a Community Garden</title>
-	<link href="css/general.css" rel="stylesheet">
+	<link href="css/admin.css" rel="stylesheet">
 </head>
 
 <body>
