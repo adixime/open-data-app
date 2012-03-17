@@ -17,7 +17,8 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
 <head>
 	<meta charset="utf-8">
 	<title>Admin Section</title>
-	<link href="css/admin.css" rel="stylesheet">
+	<link href="../css/admin.css" rel="stylesheet">
+	<script src="../js/modernizr-2.0.6.js"></script>
 </head>
 
 <body>
