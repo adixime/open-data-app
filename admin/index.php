@@ -16,7 +16,7 @@ include '../includes/admin-top.php';
 	<ol>
 		
         <?php foreach ($results as $garden) : ?>
-        	<li itemscope itemtype="http://schema.org/Park>
+        	<li itemscope itemtype="http://schema.org/Park">
             	<a href="../single.php?id=<?php echo $garden['id']; ?>" itemprop="name"><?php echo $garden['name']; ?></a>
                 <a href="edit.php?id=<?php echo $garden['id']; ?>">Edit</a>
                 <a href="delete.php?id=<?php echo $garden['id']; ?>">Delete</a>

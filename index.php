@@ -15,7 +15,7 @@ include 'includes/user-top.php';
     
 	<ol>
 		<?php foreach ($results as $garden) : ?>
-        	<li itemscope itemtype="http://schema.org/Park>
+        	<li itemscope itemtype="http://schema.org/Park">
             	<a href="single.php?id=<?php echo $garden['id']; ?>" itemprop="name"><?php echo $garden['name']; ?></a>
 				<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
 					<meta itemprop="latitude" content="<?php echo $garden['longitude']; ?>">
