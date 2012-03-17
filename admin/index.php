@@ -23,8 +23,6 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
 
 <body>
 
-	<a href="../index.php">Public Login</a>
-
 	<a href="add.php">Add a Community Garden!</a>
     
 	<ul>
