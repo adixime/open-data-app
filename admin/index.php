@@ -13,7 +13,7 @@ include '../includes/admin-top.php';
 ?>
 	<a href="add.php">Add a Community Garden!</a>
     
-	<ol class="gardens">
+	<ol>
 		
         <?php foreach ($results as $garden) : ?>
         	<li itemscope itemtype="http://schema.org/Park">
@@ -24,7 +24,7 @@ include '../includes/admin-top.php';
         <?php endforeach; ?>
 	</ul>
 	
-	<div id="map"></div>
+
 
 <?php
 include '../includes/admin-bottom.php';
