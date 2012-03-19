@@ -12,8 +12,8 @@ if (empty($id)) {
 
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $street_address = filter_input(INPUT_POST, 'street_address', FILTER_SANITIZE_STRING);
-$longitude = filter_input(INPUT_POST, 'longitude', FILTER_SANITIZE_NUMBER_FLOAT);
-$latitude = filter_input(INPUT_POST, 'latitude', FILTER_SANITIZE_NUMBER_FLOAT);
+$longitude = filter_input(INPUT_POST, 'longitude', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+$latitude = filter_input(INPUT_POST, 'latitude', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	if(empty($name)) {
