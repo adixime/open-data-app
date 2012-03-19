@@ -18,8 +18,8 @@ include 'includes/user-top.php';
         	<li itemscope itemtype="http://schema.org/Park">
             	<a href="single.php?id=<?php echo $garden['id']; ?>" itemprop="name"><?php echo $garden['name']; ?></a>
 				<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-					<meta itemprop="latitude" content="<?php echo $garden['longitude']; ?>">
-					<meta itemprop="longitude" content="<?php echo $garden['latitude']; ?>">
+					<meta itemprop="latitude" content="<?php echo $garden['latitude']; ?>">
+					<meta itemprop="longitude" content="<?php echo $garden['longitude']; ?>">
 				</span>
 
             </li>

@@ -15,7 +15,6 @@ $street_address = filter_input(INPUT_POST, 'street_address', FILTER_SANITIZE_STR
 $longitude = filter_input(INPUT_POST, 'longitude', FILTER_SANITIZE_NUMBER_FLOAT);
 $latitude = filter_input(INPUT_POST, 'latitude', FILTER_SANITIZE_NUMBER_FLOAT);
 
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	if(empty($name)) {
 		$errors['name'] = true;
@@ -37,14 +36,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			SET name = :name, street_address = :street_address, longitude = :longitude, latitude = :latitude
 			WHERE id = :id
 		');
+		$sql->bindValue(':id', $id, PDO::PARAM_INT);
 		$sql->bindValue(':name', $name, PDO::PARAM_STR);
 		$sql->bindValue(':street_address', $street_address, PDO::PARAM_STR);
 		$sql->bindValue(':longitude', $longitude, PDO::PARAM_STR);
 		$sql->bindValue(':latitude', $latitude, PDO::PARAM_STR);
 		$sql->execute();
 		
-		header('Location: index.php');
-		exit;
+		//header('Location: index.php');
+		//exit;
 	}
 }else {
 	require_once '../includes/db.php';
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	$results = $sql->fetch();
 
 	$name = $results['name'];
-	$street_address = $street_address['street_address'];
+	$street_address = $results['street_address'];
 	$longitude = $results['longitude'];
 	$latitude = $results['latitude'];
 }
