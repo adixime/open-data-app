@@ -1,5 +1,12 @@
 <?php 
 
+require_once '../includes/users.php';
+
+if (!user_is_signed_in()) {
+	header('Location: sign-in.php');
+	exit;	
+}
+
 require_once '../includes/filter-wrapper.php';
 
 require_once '../includes/db.php';
@@ -10,12 +17,10 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
 
 include '../includes/admin-top.php';
 
-session_start();
-
-$_SESSION['page-view'] += 1;
 
 ?>
 	<a href="add.php">Add a Community Garden!</a>
+    <a href="sign-out.php">Sign out you admin person!</a>
     
 	<ol>
 		
