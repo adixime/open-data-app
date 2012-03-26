@@ -10,6 +10,10 @@ $results = $db->query(' SELECT id, name, street_address, longitude, latitude
 
 include '../includes/admin-top.php';
 
+session_start();
+
+$_SESSION['page-view'] += 1;
+
 ?>
 	<a href="add.php">Add a Community Garden!</a>
     
