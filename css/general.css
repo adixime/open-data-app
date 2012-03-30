@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	margin: 0;
+	padding: 0;
+	background: transparent url("../images/girl.jpg")left top;
+	
+}
+
+h1,h2,h3,h4 {
+	font-family: 'Permanent Marker', cursive;
+	
+	color: #093;
+}
+
+body {
+	margin: 0 auto;
+	padding: 1em;
+	
+	font-family: 'Maven Pro', sans-serif;
+	color: #930;
+	
+	background-color: #FFF;
+	
+	width: 1020px;
+	
+	-moz-box-shadow: 1.5px 0px 5px #000;
+	-ms-box-shadow: 1.5px 0px 5px #000;
+  	-webkit-box-shadow: 1.5px 0px 5px #000;
+	-o-box-shadow: 1.5px 0px 3px #000;
+  	box-shadow: 1.5px 0px 5px #000;
+
+}
+
+.links {
+	margin: 100px;
+}
+
+.links ul{
+	list-style-type: none;
+}
+.links li {
+	display: inline;
+}
+#two {
+	margin-left: 150px;
+}
+#three {
+	margin-left: 150px;
+}
+#next {
+	background-color:#FC0;
+	color:#066;
+}
+#prev {
+	background-color:#FC0;
+	color:#066;
+
+}
+
+.slide-group {
+	margin-left: 180px;
+	
+	width: 645px;
+	height: 500px;
+}
