@@ -40,33 +40,37 @@ $cookie = get_rate_cookie();
 include 'includes/user-top.php';
 
 ?>
-	<h1><?php echo $results['name']; ?></h1>
+<a href="index.php" class="admin">Home</a>
 
-<dl>
-	<dt>Average Rating</dt><dd><meter value="<?php echo $rating; ?>" min="0" max="5"><?php echo $rating; ?> out of 5</meter></dd>
-	<dt>Address</dt><dd><?php echo $results['street_address']; ?></dd>
-	<dt>Longitude</dt><dd><?php echo $results['longitude']; ?></dd>
-	<dt>Latitude</dt><dd><?php echo $results['latitude']; ?></dd>
-</dl>
-
-<?php if (isset($cookie[$id])) : ?>
-
-<h2>Your rating</h2>
-<ol class="rater rater-usable">
-	<?php for ($i = 1; $i <= 5; $i++) : ?>
-		<?php $class = ($i <= $cookie[$id]) ? 'is-rated' : ''; ?>
-		<li class="rater-level <?php echo $class; ?>">★</li>
-	<?php endfor; ?>
-</ol>
-
-<?php else : ?>
-
-<h2>Rate</h2>
-<ol class="rater rater-usable">
-	<?php for ($i = 1; $i <= 5; $i++) : ?>
-	<li class="rater-level"><a href="rate.php?id=<?php echo $results['id']; ?>&rate=<?php echo $i; ?>">★</a></li>
-	<?php endfor; ?>
-</ol>
+<div class="single_body">
+		<h1><?php echo $results['name']; ?></h1>
+	
+	<dl>
+		<dt>Average Rating</dt><dd><meter value="<?php echo $rating; ?>" min="0" max="5"><?php echo $rating; ?> out of 5</meter></dd>
+		<dt>Address</dt><dd><?php echo $results['street_address']; ?></dd>
+		<dt>Longitude</dt><dd><?php echo $results['longitude']; ?></dd>
+		<dt>Latitude</dt><dd><?php echo $results['latitude']; ?></dd>
+	</dl>
+	
+	<?php if (isset($cookie[$id])) : ?>
+	
+	<h2>Your rating</h2>
+	<ol class="rater rater-usable">
+		<?php for ($i = 1; $i <= 5; $i++) : ?>
+			<?php $class = ($i <= $cookie[$id]) ? 'is-rated' : ''; ?>
+			<li class="rater-level <?php echo $class; ?>">★</li>
+		<?php endfor; ?>
+	</ol>
+	
+	<?php else : ?>
+	
+	<h2>Rate</h2>
+	<ol class="rater rater-usable">
+		<?php for ($i = 1; $i <= 5; $i++) : ?>
+		<li class="rater-level"><a href="rate.php?id=<?php echo $results['id']; ?>&rate=<?php echo $i; ?>">★</a></li>
+		<?php endfor; ?>
+	</ol>
+</div>
 
 <?php endif; ?>
 

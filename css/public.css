@@ -34,6 +34,17 @@ body {
 	left: 6em;
 	top: 0;
 }
+.single_body {
+	background-color:#ffeeb8;
+	border: 8px solid #ffdc6d;
+	
+	padding: 1em;
+	
+	width: 400px;
+	margin: 0 auto;
+	
+	
+}
 
 .head_right {
 	position: absolute;
@@ -104,7 +115,7 @@ body {
 .rater-level a,
 .rater-level a:link,
 .rater-level a:visited {
-	color: #efecd2;
+	color: #666;
 	text-decoration: none
 }
 
