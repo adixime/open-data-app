@@ -1,6 +1,6 @@
 <?php 
 
-require_once 'includes/filter-wrapper.php';
+//require_once 'includes/filter-wrapper.php';
 
 require_once 'includes/db.php';
 
@@ -36,15 +36,15 @@ include 'includes/user-top.php';
 				<meta itemprop="latitude" content="<?php echo $garden['latitude']; ?>">
 				<meta itemprop="longitude" content="<?php echo $garden['longitude']; ?>">
 			</span>
-		<meter value="<?php echo $rating; ?>" min="0" max="5"><?php echo $rating; ?> out of 5</meter>
-		<ol class="rater">
-			<?php for ($i = 1; $i <= 5; $i++) : ?>
-				<?php $class = ($i <= $rating) ? 'is-rated' : ''; ?>
-				<li class="rater-level <?php echo $class; ?>">★</li>
-			<?php endfor; ?>
+			<meter value="<?php echo $rating; ?>" min="0" max="5"><?php echo $rating; ?> out of 5</meter>
+			<ol class="rater">
+				<?php for ($i = 1; $i <= 5; $i++) : ?>
+					<?php $class = ($i <= $rating) ? 'is-rated' : ''; ?>
+					<li class="rater-level <?php echo $class; ?>">★</li>
+				<?php endfor; ?>
 			</ol>
 		</li>
-	<?php endforeach; ?>
+		<?php endforeach; ?>
 	</ol>
 	
 	<div id="map"></div>

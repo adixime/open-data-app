@@ -22,7 +22,7 @@ if (isset($cookie[$id]) || $rate < 0 || $rate > 5) {
 }
 
 $sql = $db->prepare('
-	UPDATE dinobones
+	UPDATE open_data_app
 	SET rate_count = rate_count + 1, rate_total = rate_total + :rate
 	WHERE id = :id
 ');
