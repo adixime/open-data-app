@@ -14,11 +14,16 @@ include 'includes/user-top.php';
 
 	<button id="geo">Find Me</button>
 	<form id="geo-form">
-		<label for="adr">Address</label>
-		<input id="adr">
+		<label for="adr">SEARCH</label>
+		<input id="adr" value="search here...">
 	</form>
-    
-	<a href="admin/index.php">Admin Login</a>
+	
+	<div class="head">
+		<h1 class="head_left">Community Gardens</h1>
+		<h1 class="head_right">Ottawa City</h1>
+    </div>
+	
+	<a href="admin/index.php" class="admin">Admin Login</a>
     
 	<ol class="garden">
 		<?php foreach ($results as $garden) : ?>
@@ -48,6 +53,10 @@ include 'includes/user-top.php';
 	</ol>
 	
 	<div id="map"></div>
+	
+	<footer>
+		<p>copyright @adixime, 2012</p>
+	</footer>
 
 <?php
 include 'includes/user-bottom.php';

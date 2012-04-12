@@ -1,26 +1,76 @@
 @charset "utf-8";
 /* CSS Document */
 
+body {
+	background: url(../images/bg.jpg) no-repeat center;
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto;
+	
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
 #map {
+	position:absolute;
+	left: 18em;
+	top: 14em;
 	bottom: 0;
-	position: absolute;
-	right: 0;
+	
+	width: 450px;
+	height: 400px;
+	
+	border: 8px solid #ffdc6d;
+}
+
+.head {
+	font-family: 'Norican', cursive;
+	color:#3f7c21;
+	font-size: 24px;
+}
+
+.head_left {
+	width: 100px;
+	position:absolute;
+	left: 6em;
 	top: 0;
-	width: 75%;
+}
+
+.head_right {
+	position: absolute;
+	right: 7em;
+	top: 0;
+}
+
+.garden {
+	width: 250px;
+	height: 400px;
+	overflow:scroll;
+	
+	padding: 8px;
+	
+	position: absolute;
+	left: 48em;
+	top: 13em;
+	bottom: 0;
+	
+	border: 8px solid #ffdc6d;
+	
+	background-color: #ffeeb8;
 }
 
 .garden li {
 	cursor: pointer;
+	list-style-type: none;
 }
 
 .garden li:hover {
-	background-color: #f4f3f0;
+	background-color: #ffdc6d;
 }
 
 .garden a,
 .garden a:link,
 .garden a:visited {
-	color: #a18f7f;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -48,7 +98,7 @@
 .rater-level {
 	float: left;
 
-	color: #efecd2;
+	color: #666;
 }
 
 .rater-level a,
@@ -71,10 +121,64 @@
 .is-rated-hover a,
 .is-rated-hover a:link,
 .is-rated-hover a:visited {
-	color: #ffe91f;
+	color: #090;
 }
 
 .info-window strong {
 	display: block;
+}
+
+#geo-form {
+	position: absolute;
+	bottom: 1em;
+	left: 10em;
+	
+	color:#fbc10b;
+	
+	font-size: 36px;
+	text-shadow: -2px -2px 5px #333;
+}
+#adr {
+	width: 250px;
+	height: 35px;
+	
+	position:absolute;
+	bottom: 0;
+	left: 10em;
+	
+	color:#999;
+	font-style: italic;
+	
+	border: solid 3px #CCC;
+}
+
+#geo {
+	position:absolute;
+	top: 14em;
+	left: 22.5em;
+}
+.admin {
+	position: absolute;
+	right: 22em;
+	top: 10em;
+	width: 160px;
+	height: 20px;
+	
+	background-color: rgb(255,238,184);
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	
+	text-align:center;
+	color:#000;
+	font-weight:bold;
+	
+	text-decoration: none;
+	padding: 10px; 
+}
+footer {
+	position:absolute;
+	bottom: -2.2em;
+	left: 18em;
+	color: #999;
 }
 
