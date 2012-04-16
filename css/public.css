@@ -8,13 +8,23 @@ body {
 	margin: 0 auto;
 	
 	font-family:Tahoma, Geneva, sans-serif;
+
+}
+
+.left_side {
+	float: left;
+	
+	margin-top: 12em;
+	margin-left: -8em;
+}
+.right_side {
+	float: right;
+	
+	margin-top: 3em;
+	margin-right: 12em;
 }
 
 #map {
-	position:absolute;
-	left: 18em;
-	top: 14em;
-	bottom: 0;
 	
 	width: 450px;
 	height: 400px;
@@ -22,7 +32,9 @@ body {
 	border: 8px solid #ffdc6d;
 }
 
-.head {
+
+
+header {
 	font-family: 'Norican', cursive;
 	color:#3f7c21;
 	font-size: 24px;
@@ -30,10 +42,18 @@ body {
 
 .head_left {
 	width: 100px;
-	position:absolute;
-	left: 6em;
-	top: 0;
+	float:left;
+	
+	margin-left: 1.5em;
 }
+
+
+.head_right {
+	float: right;
+	
+	margin-right: 2em;
+}
+
 .single_body {
 	background-color:#ffeeb8;
 	border: 8px solid #ffdc6d;
@@ -42,27 +62,13 @@ body {
 	
 	width: 400px;
 	margin: 0 auto;
-	
-	
-}
-
-.head_right {
-	position: absolute;
-	right: 7em;
-	top: 0;
 }
 
 .garden {
 	width: 250px;
-	height: 400px;
-	overflow-y:scroll;
-	
+	height: 385px;
+	overflow-y: scroll;	
 	padding: 8px;
-	
-	position: absolute;
-	left: 48em;
-	top: 13em;
-	bottom: 0;
 	
 	border: 8px solid #ffdc6d;
 	
@@ -142,38 +148,23 @@ body {
 }
 
 #geo-form {
-	position: absolute;
-	bottom: 1em;
-	left: 10em;
-	
 	color:#fbc10b;
 	
 	font-size: 36px;
 	text-shadow: -2px -2px 5px #333;
+	
+	float: left;
 }
 #adr {
 	width: 250px;
 	height: 35px;
-	
-	position:absolute;
-	bottom: 0;
-	left: 10em;
-	
 	color:#999;
 	font-style: italic;
 	
 	border: solid 3px #CCC;
 }
 
-#geo {
-	position:absolute;
-	top: 14em;
-	left: 22.5em;
-}
 .admin {
-	position: absolute;
-	right: 22em;
-	top: 10em;
 	width: 160px;
 	height: 20px;
 	
@@ -189,9 +180,8 @@ body {
 	padding: 10px; 
 }
 footer {
-	position:absolute;
-	bottom: -2.2em;
-	left: 18em;
 	color: #999;
+	
+	float: left;
 }
 
