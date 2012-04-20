@@ -1,12 +1,34 @@
-#Prototype
-## By:- Aditya Gupta
+# Open data App
+## Version 1.0.0
+Data-base to find the museums around Ottawa.
 
----
 
-Using PHP and MySQL create a basic prototype for your open data application. Your prototype should have the following features:
+#Author Info: 
+Aditya Gupta. adiximearts.wordpress.com.
+adixime@gmail.com
 
-    1.Fake data in your MySQL database.
-    2.A page that lists all the places.
-    3.A single page with more details for individual places.
-    4.An admin section where you can add, edit, and delete places. (Your admin section will be publicly accessible right now.)
-    5.Admin section should contain all the appropriate validation.
+Copyright MMXI, @adixime 
+
+Dependencies: jQuery, HTML5 ,CSS, google maps
+
+Versioned using Semantic Versioning, <http://semver.org/>
+
+## Quick Start
+ kml file from-http://ottawa.ca/online_services/opendata/info/community_gardens_en.html.
+
+ Include `general.css`, `open-data-app.js`, in your HTML file. Also create a table with the name and location of the community garden and code the sql query in the HTML file.
+
+ Github link: <https://github.com/adixime/open-data-app->
+
+ phpfog link:<http://community-gardens.phpfogapp.com/>
+
+## Installation Process
+Run the App directly from:<http://community-gardens.phpfogapp.com/>
+You need admin username and password to access admin seciton.
+
+
+
+## License
+Signature Pad is licensed under the [New BSD license].
+
+
