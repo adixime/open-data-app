@@ -38,27 +38,34 @@
 		}
 	}
 
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+?><!DOCTYPE HTML>
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8">
 	<title>Sign In</title>
+    <link href="../css/public.css" rel="stylesheet" />
 </head>
 
 <body>
-
-	<form method="post" action="sign-in.php">
-    	<div>
-        	<label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+	<div class="another_body">
+        <div class="single_body">
+            <form method="post" action="sign-in.php">
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required >
+                </div>
+                <button type="submit">Sign In</button>
+                
+            </form>
         </div>
-        <div>
-        	<label for="password">Password</label>
-            <input type="password" id="password" name="password" required >
-        </div>
-        <button type="submit">Sign In</button>
-        
-    </form>
-
+        <a href="../index.php" class="home">Home</a>
+	</div>
+    <footer>
+		<p>copyright @adixime, 2012</p>
+	</footer>
 </body>
 </html>

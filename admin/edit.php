@@ -67,29 +67,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
 include '../includes/admin-top.php';
 
 ?>
-
-	<form method="post" action="edit.php?id=<?php echo $id; ?>">
-    	<div>
-        	<label for="">Community Garden Name<?php if (isset($errors['name'])) : ?> <strong>is required</strong><?php endif; ?></label>
-            <input id="name" name="name" value="<?php echo $name; ?>" required>
-        </div>
-        <div>
-        	<label for="street_address">Street Address<?php if (isset($errors['street_address'])) : ?> <strong>is required</strong><?php endif; ?></label>
-            <input id="street_address" name="street_address" value="<?php echo $street_address; ?>" required>
-        </div>
-		<div>
-        	<label for="longitude">Longitude<?php if (isset($errors['longitude'])) : ?> <strong>is required</strong><?php endif; ?></label>
-            <input id="longitude" name="longitude" type="number" value="<?php echo $longitude; ?>" required>
-        </div>
-		<div>
-        	<label for="latitude">Latitude<?php if (isset($errors['latitude'])) : ?> <strong>is required</strong><?php endif; ?></label>
-            <input id="latitude" name="latitude" type="number" value="<?php echo $latitude; ?>" required>
-        </div>
-        <button type="submit">Update</button>
-    </form>
-	
-	<a href="index.php">Go Back</a>
-
+	<div class="another_body">
+    	<div class="single_body">
+            <form method="post" action="edit.php?id=<?php echo $id; ?>">
+                <div>
+                    <label for="">Community Garden Name<?php if (isset($errors['name'])) : ?> <strong>is required</strong><?php endif; ?></label>
+                    <input id="name" name="name" value="<?php echo $name; ?>" required>
+                </div>
+                <div>
+                    <label for="street_address">Street Address<?php if (isset($errors['street_address'])) : ?> <strong>is required</strong><?php endif; ?></label>
+                    <input id="street_address" name="street_address" value="<?php echo $street_address; ?>" required>
+                </div>
+                <div>
+                    <label for="longitude">Longitude<?php if (isset($errors['longitude'])) : ?> <strong>is required</strong><?php endif; ?></label>
+                    <input id="longitude" name="longitude" type="number" value="<?php echo $longitude; ?>" required>
+                </div>
+                <div>
+                    <label for="latitude">Latitude<?php if (isset($errors['latitude'])) : ?> <strong>is required</strong><?php endif; ?></label>
+                    <input id="latitude" name="latitude" type="number" value="<?php echo $latitude; ?>" required>
+                </div>
+                <button type="submit">Update</button>
+            </form>
+		</div>        
+        <a href="index.php" class="home">Admin Page</a>
+    </div>
+	<footer>
+		<p>copyright @adixime, 2012</p>
+	</footer>
 <?php
 include '../includes/admin-bottom.php';
 ?>
