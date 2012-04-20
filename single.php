@@ -40,8 +40,8 @@ $cookie = get_rate_cookie();
 include 'includes/user-top.php';
 
 ?>
-<a href="index.php" class="admin">Home</a>
 
+<a href="index.php" class="home">Home</a>
 <div class="single_body">
 		<h1><?php echo $results['name']; ?></h1>
 	
@@ -70,7 +70,9 @@ include 'includes/user-top.php';
 		<li class="rater-level"><a href="rate.php?id=<?php echo $results['id']; ?>&rate=<?php echo $i; ?>">★</a></li>
 		<?php endfor; ?>
 	</ol>
+    
 </div>
+
 
 <?php endif; ?>
 

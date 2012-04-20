@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+	padding: 1px;
+}
+
 body {
 	background: url(../images/bg.jpg) no-repeat center;
 	width: 1024px;
@@ -61,7 +65,10 @@ header {
 	padding: 1em;
 	
 	width: 400px;
-	margin: 0 auto;
+		
+	position: absolute;
+	top: 4em;
+	left: 28em;
 }
 
 .garden {
@@ -179,9 +186,31 @@ header {
 	text-decoration: none;
 	padding: 10px; 
 }
+.home {
+	width: 160px;
+	height: 20px;
+	
+	background-color: rgb(255,238,184);
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	
+	text-align:center;
+	color:#000;
+	font-weight:bold;
+	
+	text-decoration: none;
+	padding: 10px; 
+	
+	position: absolute;
+	top: 30em;
+	left: 45em;
+}
 footer {
 	color: #999;
 	
 	float: left;
+	margin-top: 3em;
+	margin-right: 30em;
+
 }
 

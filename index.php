@@ -23,7 +23,7 @@ include 'includes/user-top.php';
 		
 		<form id="geo-form">
 			<label for="adr">SEARCH</label>
-			<input id="adr" value="search here...">
+			<input id="adr" placeholder="search here...">
 		</form>
 	</div>
 	
@@ -41,12 +41,13 @@ include 'includes/user-top.php';
 			?>
 			<li itemscope itemtype="http://schema.org/TouristAttraction" data-id="<?php echo $garden['id']; ?>">
 				<strong class="distance"></strong>
-				<a href="single.php?id=<?php echo $garden['id']; ?>" itemprop="name"><?php echo $garden['name']; ?></a>
+				<a href="single.php?id=<?php echo $garden['id']; ?>" itemprop="name"><strong><?php echo $garden['name']; ?></strong></a>
 				<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
 					<meta itemprop="latitude" content="<?php echo $garden['latitude']; ?>">
 					<meta itemprop="longitude" content="<?php echo $garden['longitude']; ?>">
 				</span>
 				<meter value="<?php echo $rating; ?>" min="0" max="5"><?php echo $rating; ?> out of 5</meter>
+                
 				<ol class="rater">
 					<?php for ($i = 1; $i <= 5; $i++) : ?>
 						<?php $class = ($i <= $rating) ? 'is-rated' : ''; ?>
@@ -54,6 +55,7 @@ include 'includes/user-top.php';
 					<?php endfor; ?>
 				</ol>
 			</li>
+            
 			<?php endforeach; ?>
 		</ol>
 	</div>		
