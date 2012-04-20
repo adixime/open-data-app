@@ -1,5 +1,17 @@
 <?php
 
+	/**
+  * The page where you can edit an existing garden.
+  *
+  * @author  Aditya Gupta <adixime@gmail.com>
+  *
+  * @copyright adixime
+  *
+  * @link http://community-gardens.phpfogapp.com/admin/edit.php?id=2
+  *
+  * @Version 1.0.0
+  *
+  */
 require_once '../includes/filter-wrapper.php';
 
 $errors = array();

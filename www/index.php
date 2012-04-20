@@ -1,5 +1,18 @@
 <?php 
 
+/**
+  * This is the main home page of the open data app where all search operations take place.
+  *
+  * @author  Aditya Gupta <adixime@gmail.com>
+  *
+  * @copyright adixime
+  *
+  * @link http://community-gardens.phpfogapp.com/
+  *
+  * @Version 1.0.0
+  *
+  */
+
 //require_once 'includes/filter-wrapper.php';
 
 require_once 'includes/db.php';

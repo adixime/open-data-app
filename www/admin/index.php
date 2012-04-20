@@ -1,5 +1,18 @@
 <?php 
 
+	/**
+  * The admin page, listing all the gardens and giving option to add, edit and delete.
+  *
+  * @author  Aditya Gupta <adixime@gmail.com>
+  *
+  * @copyright adixime
+  *
+  * @link http://community-gardens.phpfogapp.com/admin/index.php
+  *
+  * @Version 1.0.0
+  *
+  */
+
 require_once '../includes/users.php';
 
 if (!user_is_signed_in()) {

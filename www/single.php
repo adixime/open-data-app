@@ -1,4 +1,16 @@
 <?php
+/**
+  * The page where you can see the exact co-ordinates and rate.
+  *
+  * @author  Aditya Gupta <adixime@gmail.com>
+  *
+  * @copyright adixime
+  *
+  * @link http://community-gardens.phpfogapp.com/single.php
+  *
+  * @Version 1.0.0
+  *
+  */
 
 require_once 'includes/filter-wrapper.php';
 

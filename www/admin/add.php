@@ -1,5 +1,18 @@
 <?php
 
+	/**
+  * The page where you can add a garden.
+  *
+  * @author  Aditya Gupta <adixime@gmail.com>
+  *
+  * @copyright adixime
+  *
+  * @link http://community-gardens.phpfogapp.com/admin/add.php
+  *
+  * @Version 1.0.0
+  *
+  */
+
 require_once '../includes/filter-wrapper.php';
 
 $errors = array();

@@ -1,5 +1,18 @@
 <?php 
 
+	/**
+  * The page where you login to your admin account.
+  *
+  * @author  Aditya Gupta <adixime@gmail.com>
+  *
+  * @copyright adixime
+  *
+  * @link http://community-gardens.phpfogapp.com/admin/sign-in.php
+  *
+  * @Version 1.0.0
+  *
+  */
+
 	require_once '../includes/users.php';
 	require_once '../includes/db.php';
 	
