@@ -1,6 +1,8 @@
 # Open data App
 ## Version 1.0.0
-Data-base to find the museums around Ottawa.
+An Interactive App to location Community Gardens in Ottawa.
+
+Project Brief:<http://adixime.github.com/open-data-app/>
 
 
 #Author Info: 
@@ -16,7 +18,7 @@ Versioned using Semantic Versioning, <http://semver.org/>
 ## Quick Start
  kml file from-http://ottawa.ca/online_services/opendata/info/community_gardens_en.html.
 
- Include `general.css`, `open-data-app.js`, in your HTML file. Also create a table with the name and location of the community garden and code the sql query in the HTML file.
+ Include `general.css`, `open-data-app.js`, in your HTML file. Create a table with the name and location of the community garden and input the sql query in the HTML file using php code.
 
  Github link: <https://github.com/adixime/open-data-app->
 
