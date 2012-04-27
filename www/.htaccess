@@ -1,0 +1,18 @@
+AddEncoding gzip .gz
+<FilesMatch .*\.js.gz$>
+  ForceType text/javascript
+	Header set Content-Encoding: gzip
+	Header set Cache-control: private
+</FilesMatch>
+<FilesMatch .*\.css.gz$>
+	ForceType text/css
+	Header set Content-Encoding: gzip
+	Header set Cache-control: private
+</FilesMatch>
+
+RewriteEngine on 
+RewriteCond %{HTTP_USER_AGENT} !".*Safari.*" [OR]
+RewriteCond %{HTTP_USER_AGENT} !".*Konqueror.*"
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)$ $1.gz [QSA,L]
