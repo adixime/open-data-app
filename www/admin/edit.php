@@ -12,6 +12,14 @@
   * @Version 1.0.0
   *
   */
+  
+require_once '../includes/users.php';
+
+if (!user_is_signed_in()) {
+	header('Location: sign-in.php');
+	exit;	
+}
+  
 require_once '../includes/filter-wrapper.php';
 
 $errors = array();
