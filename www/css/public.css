@@ -2,7 +2,7 @@
 /* CSS Document */
 
 html {
-	background-color: #b9d7fb;
+
 }
 
 body {
@@ -14,7 +14,9 @@ body {
 	font-family:Tahoma, Geneva, sans-serif;
 	
 	position: relative;
-
+	background-color: #ffeeb8;
+	
+	border: 4px #ffdc6d solid;
 }
 
 .left_side {
