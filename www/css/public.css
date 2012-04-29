@@ -1,14 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
-html {
-
-}
-
 body {
 	background: url(../images/bg.jpg) no-repeat center top;
 	width: 1024px;
-	height: 768px;
+	height: 1000px;
 	margin: 0 auto;
 	padding: 1px;
 	font-family:Tahoma, Geneva, sans-serif;
