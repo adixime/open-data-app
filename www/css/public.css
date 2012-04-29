@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+	background-color: #b9d7fb;
+}
 
 body {
 	background: url(../images/bg.jpg) no-repeat center top;
