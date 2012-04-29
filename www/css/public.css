@@ -10,9 +10,12 @@ body {
 	font-family:Tahoma, Geneva, sans-serif;
 	
 	position: relative;
-	background-color: #ffeeb8;
+	
 	
 	border: 4px #ffdc6d solid;
+}
+.disqus_thread {
+	background-color: #ffeeb8;
 }
 
 .left_side {
