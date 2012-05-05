@@ -4,7 +4,7 @@
 body {
 	background: url(../images/bg.jpg) no-repeat center top;
 	width: 1024px;
-	height: 700px;
+	height: 1000px;
 	margin: 0 auto;
 	padding: 1px;
 	font-family:Tahoma, Geneva, sans-serif;
@@ -12,8 +12,10 @@ body {
 	position: relative;
 
 }
-.disqus_thread {
+#disqus_thread {
 	background-color: #ffeeb8;
+	position:absolute;
+	bottom:0;
 }
 
 .left_side {
