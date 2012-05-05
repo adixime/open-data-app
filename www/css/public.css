@@ -13,7 +13,7 @@ body {
 
 }
 #disqus_thread {
-	background-color: #ffeeb8;
+	width: 100%;
 	position:absolute;
 	bottom:0;
 }
