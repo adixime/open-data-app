@@ -14,8 +14,7 @@ body {
 }
 #disqus_thread {
 	background-color: #ffeeb8;
-	position:absolute;
-	bottom:0;
+	width: 100%;
 	opacity:0.8;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
 }
