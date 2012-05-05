@@ -4,6 +4,7 @@
 body {
 	background: url(../images/bg.jpg) no-repeat center top;
 	width: 1024px;
+	height: 100%;
 	margin: 0 auto;
 	padding: 1px;
 	font-family:Tahoma, Geneva, sans-serif;
@@ -278,7 +279,7 @@ footer {
 	
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	right: 0;
 
 }
 
