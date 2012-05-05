@@ -95,7 +95,7 @@ include 'includes/user-top.php';
 		<p>copyright @adixime, 2012</p>
 </footer>
 
-	<div id="disqus_thread"></div>
+	<p><div id="disqus_thread"></div>
 	<script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'communitygardensapp'; // required: replace example with your forum shortname
@@ -108,7 +108,7 @@ include 'includes/user-top.php';
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a></p>
 
 <?php
 include 'includes/user-bottom.php';
